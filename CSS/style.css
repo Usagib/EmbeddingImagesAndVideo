@@ -3,7 +3,12 @@ nav{
 }
 
 .logo-responsive {
-    width: 50%;
-    height: auto;
+  width: 80px;
+    height: 24px;
     top: 0;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  height: 40px;
 }
