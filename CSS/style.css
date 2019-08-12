@@ -1,0 +1,9 @@
+nav{
+    position: relative;
+}
+
+.logo-responsive {
+    width: 50%;
+    height: auto;
+    top: 0;
+}
