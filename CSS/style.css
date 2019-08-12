@@ -3,7 +3,7 @@ nav{
 }
 
 .logo-responsive {
-  width: 80px;
+  width: auto;
     height: 24px;
     top: 0;
 }
@@ -11,4 +11,8 @@ nav{
 .profile-pic {
   border-radius: 50%;
   height: 40px;
+}
+
+aside {
+  display: block;
 }
