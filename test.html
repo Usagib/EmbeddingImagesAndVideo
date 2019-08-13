@@ -12,7 +12,7 @@ span{
   display: grid;
   grid-template-columns: 70% auto;
   grid-gap: 10px;
-  background-color: #2196F3;
+  background-color: #DCDDDD;
   padding: 10px;
 }
 
@@ -32,14 +32,14 @@ span{
 
 .grid-rows-1 > div {
   background-color: rgba(255, 255, 255, 0.8);
-  text-align: center;
+  text-align: left;
   padding: 20px 0;
   font-size: 30px;
 }
 
 .grid-rows-2 {
   display: grid;
-  grid-template-rows: auto auto auto;
+  grid-template-rows: repeat(3,150px);
   grid-gap: 10px;
   background-color: #2196F3;
   padding: 10px;
@@ -71,6 +71,10 @@ span{
     display: block;
   }
 
+  .logo-video{
+    height: 30px
+  }
+
   .logo-s{
     width: 15px;
     margin-left: 20px;
@@ -83,15 +87,12 @@ span{
   color: red;
 }
 
-.nav-item-left {
-}
-
 .nav-item-center{
-  align-items: center;
+  text-align:center;
 }
 
 .nav-item-right{
-  justify-items: end;
+  text-align:right;
 }
 
 .profile-pic {
@@ -106,17 +107,12 @@ span{
   padding: 5px;
 }
 
-.grid-playlist-thumb{
-
-}
-
 .grid-cols-playlist{
   display: grid;
-  grid-template-columns: repeat(2, auto); 
+  grid-template-columns: repeat(2, auto);
 }
 
 .grid-cols-playlist > div {
-  display:inline-block;
   align-items: start;
   font-size: 12px;
 }
@@ -135,7 +131,7 @@ span{
     </div>
     <div class="nav-item-center">
       <a href="#">
-        <input type="text" placeholder="Search" name="search" />
+        <input type="text" placeholder="Search" size="80%" name="search" />
         <button type="submit" >
           <img class="logo-s" src="https://static.thenounproject.com/png/101791-200.png"/>
         </button>
@@ -162,12 +158,15 @@ span{
       <iframe width="560" height="315" src="https://www.youtube.com/embed/V74l_zS1x8E"
       frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
       allowfullscreen></iframe>
-    
-      <h1> Koalas jumping for classical music </h1>
+
+      <h3> Koalas jumping for classical music </h3>
+      <img class="profile-pic" src="https://static-s.aa-cdn.net/img/ios/1165390363/4310ed36d4620b91c1eb2ad59c8b59d0?v=1"/>
       <span> 50899 Views</span>
       <img class="logo-s" src="https://cdn4.iconfinder.com/data/icons/like-18/32/459-01-512.png"/>200
       <img class="logo-s" src="https://jamiekakleas.files.wordpress.com/2012/12/facebook-dislike-1.jpg"/>0
-
+        <img class="logo-video" src="https://cdn2.iconfinder.com/data/icons/ui-thick-lines/620/share_android-512.png"/>
+        <img class="logo-video" src="https://cdn.dribbble.com/users/1077130/screenshots/3524752/free-youtube-subscribe-button-png-download-by-alfredocreates.jpg
+"/>
     </div>
 
     <div>
@@ -198,8 +197,9 @@ span{
       </article>
     </div>
   </div>
-  <div class="grid-rows-2"> 
-    <div> 
+
+  <div class="grid-rows-2">
+    <div>
       <div class="grid-cols-playlist">
         <div class="grid-playlist-thumb">
           <img class="thumbnail"src="https://i1.wp.com/starkeycomics.com/wp-content/uploads/2019/01/DINOSAUR-WIG-1-1.jpg?fit=640%2C369&ssl=1"/>
@@ -215,9 +215,9 @@ span{
           </a>
         </div>
       </div>
-    </div>    
-  
-    <div> 
+    </div>
+
+    <div>
       <div class="grid-cols-playlist">
         <div class="grid-playlist-thumb">
           <img class="thumbnail"src="https://i1.wp.com/starkeycomics.com/wp-content/uploads/2019/01/DINOSAUR-WIG-1-1.jpg?fit=640%2C369&ssl=1"/>
@@ -233,9 +233,9 @@ span{
           </a>
         </div>
       </div>
-    </div> 
+    </div>
 
-    <div> 
+    <div>
       <div class="grid-cols-playlist">
         <div class="grid-playlist-thumb">
           <img class="thumbnail"src="https://i1.wp.com/starkeycomics.com/wp-content/uploads/2019/01/DINOSAUR-WIG-1-1.jpg?fit=640%2C369&ssl=1"/>
@@ -251,13 +251,13 @@ span{
           </a>
         </div>
       </div>
-    </div> 
-  
-  
-  
+    </div>
+
+
+
   </div>
 
-  
+
 
 
 
