@@ -1,31 +1,17 @@
-nav{
-    position: relative;
-}
-
-.logo-responsive {
-  width: auto;
-    height: 24px;
-    top: 0;
-}
-
-.profile-pic {
-  border-radius: 50%;
-  height: 40px;
-}
-
-aside {
-  display: block;
+span{
+  font-size: 12px;
+  color: red;
 }
 
 .grid-container {
   display: grid;
   grid-template-columns: 70% auto;
   grid-gap: 10px;
-  background-color: #2196F3;
+  background-color: #DCDDDD;
   padding: 10px;
 }
 
-.grid-container > div { /* */
+.grid-container > div {
   background-color: rgba(255, 255, 255, 0.8);
   text-align: center;
   padding: 20px 0;
@@ -33,7 +19,7 @@ aside {
 }
 .grid-rows-1 {
   display: grid;
-  grid-template-rows: 80% auto auto;
+  grid-template-rows: repeat(4, auto);
   grid-gap: 10px;
   background-color: #2196F3;
   padding: 10px;
@@ -41,14 +27,14 @@ aside {
 
 .grid-rows-1 > div {
   background-color: rgba(255, 255, 255, 0.8);
-  text-align: center;
+  text-align: left;
   padding: 20px 0;
   font-size: 30px;
 }
 
 .grid-rows-2 {
   display: grid;
-  grid-template-rows: auto auto auto auto;
+  grid-template-rows: repeat(3,150px);
   grid-gap: 10px;
   background-color: #2196F3;
   padding: 10px;
@@ -59,4 +45,73 @@ aside {
   text-align: center;
   padding: 20px 0;
   font-size: 30px;
+}
+
+  .navbar{
+    overflow: hidden;
+    background-color: #eee;
+    top:0;
+    width: 100%;
+  }
+
+  .navbar a{
+    display: inline-block;
+    color: black;
+    text-align: left;
+    padding: 10px 20px 5px 5px;
+  }
+
+  .logo{
+    width:30px;
+    display: block;
+  }
+
+  .logo-video{
+    height: 30px
+  }
+
+  .logo-s{
+    width: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+.nav-container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  color: red;
+}
+
+.nav-item-center{
+  text-align:center;
+}
+
+.nav-item-right{
+  text-align:right;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  height: 40px;
+}
+
+.thumbnail{
+  border: 1px solid #eee;
+  border-radius: 4px;
+  width:192px;
+  padding: 5px;
+}
+
+.grid-cols-playlist{
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+}
+
+.grid-cols-playlist > div {
+  align-items: start;
+  font-size: 12px;
+}
+
+.user-name{
+  
 }
