@@ -55,46 +55,71 @@
   }
 
   .navbar a{
-    float: left;
-    display: block;
+    display: inline-block;
     color: black;
     text-align: left;
-    padding: 10px 200px 5px 5px;
+    padding: 10px 20px 5px 5px;
   }
 
   .logo{
     width:30px;
+    display: block;
   }
 
   .logo-s{
     width: 15px;
   }
 
+.nav-container {
+  display: grid;
+  grid-template-columns: repeat(3, auto); 
+  color: red;
+}
+
+.nav-item-left {
+}
+
+.nav-item-center{
+  align-items: center;
+}
+
+.nav-item-right{
+  justify-items: end;
+} 
+
+
 </style>
 </head>
 <body>
 
 <div class="navbar">
-<a href="#"><img class="logo"
-    src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/YouTube_Rewind_Logo_%282017_to_Present%29.svg/100px-YouTube_Rewind_Logo_%282017_to_Present%29.svg.png"/>
-</a>
-<a href="#">
-  <input type="text" placeholder="Search" name="search" />
-  <button type="submit" >
-    <img class="logo-s" src="https://static.thenounproject.com/png/101791-200.png"/>
-  </button>
-</a>
-<a href="#">
-  <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/OOjs_UI_icon_upload-ltr.svg/600px-OOjs_UI_icon_upload-ltr.svg.png"/>
-</a>
-<a href="#">
-  <img class="logo" src="https://cdn1.iconfinder.com/data/icons/business-users/512/circle-512.png"/>
-</a>
-<a href"#">
-  <button type="button" id="sign-in">
-  <span>sign in</span>
-</button>
-</a>
+  <div class="nav-container">
+    <div class="nav-item-left">
+      <a href="#"><img class="logo"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/YouTube_Rewind_Logo_%282017_to_Present%29.svg/100px-YouTube_Rewind_Logo_%282017_to_Present%29.svg.png"/>
+      </a>
+    </div>
+    <div class="nav-item-center">
+      <a href="#">
+        <input type="text" placeholder="Search" name="search" />
+        <button type="submit" >
+          <img class="logo-s" src="https://static.thenounproject.com/png/101791-200.png"/>
+        </button>
+      </a>
+    </div>
+    <div class="nav-item-right">
+      <a href="#">
+        <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/OOjs_UI_icon_upload-ltr.svg/600px-OOjs_UI_icon_upload-ltr.svg.png"/>
+      </a>
+      <a href="#">
+        <img class="logo" src="https://cdn1.iconfinder.com/data/icons/business-users/512/circle-512.png"/>
+      </a>
+      <a href="#">
+        <button type="button" id="sign-in">
+        <span>sign in</span>
+      </button></a>
+    </div>
+  </div>
 </div>
 
 <div class="grid-container">
