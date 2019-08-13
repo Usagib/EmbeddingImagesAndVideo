@@ -18,7 +18,7 @@
 }
 .grid-rows-1 {
   display: grid;
-  grid-template-rows: 80% auto auto;
+  grid-template-rows: repeat(4, auto);
   grid-gap: 10px;
   background-color: #2196F3;
   padding: 10px;
@@ -49,7 +49,6 @@
   .navbar{
     overflow: hidden;
     background-color: #eee;
-    position: fixed;
     top:0;
     width: 100%;
   }
@@ -72,7 +71,7 @@
 
 .nav-container {
   display: grid;
-  grid-template-columns: repeat(3, auto); 
+  grid-template-columns: repeat(3, auto);
   color: red;
 }
 
@@ -85,7 +84,19 @@
 
 .nav-item-right{
   justify-items: end;
-} 
+}
+
+.profile-pic {
+  border-radius: 50%;
+  height: 40px;
+}
+
+.thumbnail{
+  border: 1px solid #eee;
+  border-radius: 4px;
+  width:192px;
+  padding: 5px;
+}
 
 
 </style>
@@ -124,13 +135,53 @@
 
 <div class="grid-container">
   <div class="grid-rows-1">
-    <div>1</div>
-    <div>2</div>
-    <div>3</div>
+    <div>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/V74l_zS1x8E"
+      frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+    </div>
+    <div>
+      <article id="comments">
+        <img class="profile-pic" src="https://static-s.aa-cdn.net/img/ios/1165390363/4310ed36d4620b91c1eb2ad59c8b59d0?v=1"Comments/>
+        Marty McFly 2 days ago<br>
+        Koalas could be a great pet
+        <img class="logo-s" src="https://cdn4.iconfinder.com/data/icons/like-18/32/459-01-512.png"/>2000
+        <img class="logo-s" src="https://jamiekakleas.files.wordpress.com/2012/12/facebook-dislike-1.jpg"/>2000
+      </article>
+    </div>
+    <div>
+      <article id="comments">
+        <img class="profile-pic" src="https://static-s.aa-cdn.net/img/ios/1165390363/4310ed36d4620b91c1eb2ad59c8b59d0?v=1"Comments/>
+        Marty McFly 2 days ago<br>
+        Koalas could be a great pet
+        <img class="logo-s" src="https://cdn4.iconfinder.com/data/icons/like-18/32/459-01-512.png"/>2000
+        <img class="logo-s" src="https://jamiekakleas.files.wordpress.com/2012/12/facebook-dislike-1.jpg"/>2000
+      </article>
+    </div>
+    <div>
+      <article id="comments">
+        <img class="profile-pic" src="https://static-s.aa-cdn.net/img/ios/1165390363/4310ed36d4620b91c1eb2ad59c8b59d0?v=1"Comments/>
+        Marty McFly 2 days ago<br>
+        Koalas could be a great pet
+        <img class="logo-s" src="https://cdn4.iconfinder.com/data/icons/like-18/32/459-01-512.png"/>2000
+        <img class="logo-s" src="https://jamiekakleas.files.wordpress.com/2012/12/facebook-dislike-1.jpg"/>2000
+      </article>
+    </div>
   </div>
   <div class="grid-rows-2">
-    <div>1</div>
-    <div>2</div>
+    
+    <div>
+      <img class="thumbnail"src="https://i1.wp.com/starkeycomics.com/wp-content/uploads/2019/01/DINOSAUR-WIG-1-1.jpg?fit=640%2C369&ssl=1"/>
+        16:45
+        <a href="#">A dinosoaur with little hand</a><br>
+        Rocky0rex 4<br>
+        42.000
+      </a>
+    </div>
+
+
+    <div>
+    </div>
     <div>3</div>
   </div>
 </div>
