@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.grid-container {
+  display: grid;
+  grid-template-columns: 70% auto;
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+.grid-rows-1 {
+  display: grid;
+  grid-template-rows: 80% auto auto;
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-rows-1 > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.grid-rows-2 {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-rows-2 > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+  .navbar{
+    overflow: hidden;
+    background-color: #eee;
+    position: fixed;
+    top:0;
+    width: 100%;
+  }
+
+  .navbar a{
+    float: left;
+    display: block;
+    color: black;
+    text-align: left;
+    padding: 10px 200px 5px 5px;
+  }
+
+  .logo{
+    width:30px;
+  }
+
+  .logo-s{
+    width: 15px;
+  }
+
+</style>
+</head>
+<body>
+
+<div class="navbar">
+<a href="#"><img class="logo"
+    src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/YouTube_Rewind_Logo_%282017_to_Present%29.svg/100px-YouTube_Rewind_Logo_%282017_to_Present%29.svg.png"/>
+</a>
+<a href="#">
+  <input type="text" placeholder="Search" name="search" />
+  <button type="submit" >
+    <img class="logo-s" src="https://static.thenounproject.com/png/101791-200.png"/>
+  </button>
+</a>
+<a href="#">
+  <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/OOjs_UI_icon_upload-ltr.svg/600px-OOjs_UI_icon_upload-ltr.svg.png"/>
+</a>
+<a href="#">
+  <img class="logo" src="https://cdn1.iconfinder.com/data/icons/business-users/512/circle-512.png"/>
+</a>
+<a href"#">
+  <button type="button" id="sign-in">
+  <span>sign in</span>
+</button>
+</a>
+</div>
+
+<div class="grid-container">
+  <div class="grid-rows-1">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+  </div>
+  <div class="grid-rows-2">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+  </div>
+</div>
+
+</body>
+</html>
