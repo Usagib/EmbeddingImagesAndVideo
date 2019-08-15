@@ -9,7 +9,7 @@ body{
   display: grid;
   grid-template-columns: 70% auto;
   grid-gap: 10px;
-  background-color: #DCDDDD;
+  background-color: #fff;
   padding: 10px;
 }
 
@@ -134,6 +134,8 @@ body{
 
 }
 
+
+
 .video-title{
   color: #0d0d0d;
   font-size: 30px;
@@ -158,5 +160,4 @@ body{
   position: relative;
   left: 28%;
   bottom: 23%;
-}
 }
