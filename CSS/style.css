@@ -148,3 +148,15 @@ body{
 .grid-playlist-description{
   text-align: left;
 }
+
+.time-box{
+  border-radius: 2px;
+  margin: 4px;
+  padding: 2px 4px;
+  color: white;
+  background-color: rgba(0,0,0,0.8);
+  position: relative;
+  left: 28%;
+  bottom: 23%;
+}
+}
