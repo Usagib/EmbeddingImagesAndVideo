@@ -16,3 +16,7 @@ Project Screenshot,
 
 [screens]: img/screenshot.png "We did it again! 🚀"
 [screens1]: img/screenshot1.png "We did it again! 🚀"
+
+#### Authors 
+* [ @usagib ](https://github.com/Usagib)
+* [ @sebastianlujan ](https://github.com/sebastianlujan)
